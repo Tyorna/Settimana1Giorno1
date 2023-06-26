@@ -54,7 +54,7 @@ public static void main (String[] args)
 		double base = Double.parseDouble(input.nextLine());
 		System.out.println(altezza * base);
 	
-	Scanner pari = new Scanner(System.in);
+		
 		System.out.println("Inserisci un numero");
 		int pariDispari = Integer.valueOf(input.nextInt());
 		int risultato = zero(pariDispari);
