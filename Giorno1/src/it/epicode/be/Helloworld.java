@@ -40,7 +40,6 @@ public static void main (String[] args)
 		
 		System.out.println("Le parole inserite sono: " + prima + " " + seconda + " " + terza);
 		System.out.println("Le parole inserite sono: " + terza + " " + seconda + " " + prima);
-		input.close();
 		
 		
 		//Esercizio 4
@@ -49,31 +48,28 @@ public static void main (String[] args)
 		double perimetroRettangolo = perimetro(7.5, 5.5);
 		System.out.println(perimetroRettangolo);
 		
-		//Scanner prova = new Scanner(System.in);
-		//System.out.println("Calcola il perimetro di un rettangolo, inserisci l'altezza");
-		//int altezza = prova.nextInt();
-		//System.out.println("Inserisci la base");
-		//int base = prova.nextInt();
-		//System.out.println(altezza * base);
-		//prova.close();
-		
-		Scanner pari = new Scanner(System.in);
+		System.out.println("Calcola il perimetro di un rettangolo, inserisci l'altezza");
+		double altezza =  Double.parseDouble(input.nextLine());
+		System.out.println("Inserisci la base");
+		double base = Double.parseDouble(input.nextLine());
+		System.out.println(altezza * base);
+	
+	Scanner pari = new Scanner(System.in);
 		System.out.println("Inserisci un numero");
-		int pariDispari = pari.nextInt();
+		int pariDispari = Integer.valueOf(input.nextInt());
 		int risultato = zero(pariDispari);
 		System.out.println(risultato);
-		pari.close();
 		
-		//Scanner triangolo = new Scanner(System.in);
-		//System.out.println("Inserisci lato triangolo");
-		//int lato1 = triangolo.nextInt();
-		//System.out.println("Inserisci 2° lato triangolo");
-		//int lato2 = triangolo.nextInt();
-		//System.out.println("Inserisci 3* lato triangolo");
-		//int lato3 = triangolo.nextInt();
-		//int totale = area(lato1, lato2, lato3);
-		//System.out.println("Il totale è: " + totale);
-		//triangolo.close();
+		
+		System.out.println("Inserisci lato triangolo");
+		int lato1 = input.nextInt();
+		System.out.println("Inserisci 2° lato triangolo");
+		int lato2 = input.nextInt();
+		System.out.println("Inserisci 3* lato triangolo");
+		int lato3 = input.nextInt();
+	    int totale = area(lato1, lato2, lato3);
+		System.out.println("Il totale è: " + totale);
+		input.close();
 		}
 
 public static int molt(int n1, int n2) {
